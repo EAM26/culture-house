@@ -1,4 +1,5 @@
-import { useState } from "react";
+import {useState} from "react";
+import {Link} from "react-router";
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -6,12 +7,12 @@ function NavBar() {
     return (
         <nav className="font-montserrat px-5 py-5">
             <div className="flex items-center justify-between">
-                <a
-                    href="https://www.nu.nl/"
+                <Link
+                    to="/"
                     className="text-[1.4rem] font-semibold"
                 >
                     Culture House
-                </a>
+                </Link>
 
                 <button
                     type="button"
@@ -23,25 +24,25 @@ function NavBar() {
                 </button>
 
                 <ul className="hidden items-center gap-8 md:flex">
-                    <li><a href="">Over ons</a></li>
-                    <li><a href="">Studio</a></li>
-                    <li><a href="">Diensten</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Podcast Studio</a></li>
-                    <li><a href="">Op locatie</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><Link to="/about">Over ons</Link></li>
+                    <li><Link to="studio">Studio</Link></li>
+                    <li><Link to="/services">Diensten</Link></li>
+                    <li><Link to="/portfolio">Portfolio</Link></li>
+                    <li><Link to="/podcast-studio">Podcast Studio</Link></li>
+                    <li><Link to="/location">Op Location</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
 
             {isOpen && (
                 <ul className="mt-6 flex flex-col gap-4 text-center md:hidden">
-                    <li><a href="">Over ons</a></li>
-                    <li><a href="">Studio</a></li>
-                    <li><a href="">Diensten</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Podcast Studio</a></li>
-                    <li><a href="">Op locatie</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><Link to="/about">Over ons</Link></li>
+                    <li><Link to="studio">Studio</Link></li>
+                    <li><Link to="/services">Diensten</Link></li>
+                    <li><Link to="/portfolio">Portfolio</Link></li>
+                    <li><Link to="/podcast-studio">Podcast Studio</Link></li>
+                    <li><Link to="/location">Op Location</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             )}
         </nav>
