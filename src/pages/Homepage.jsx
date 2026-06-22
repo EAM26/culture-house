@@ -9,8 +9,9 @@ function Homepage(props) {
         <main className="font-montserrat">
             <Hero/>
             <Info
-                classNameDiv="text-center font-montserrat pt-8 w-1/2 mx-auto"
+                classNameDiv="text-center font-sans py-8 px-8 mx-auto"
                 classNameTitle="text-5xl font-bold pb-8"
+                classNamePar="text-gray-500 text-xl"
                 titleText="Wat wij creëren"
                 subTextOne="Van podcast en videoproductie tot muziekregistraties en livestreams."
                 subTextTwo="Wij helpen makers, bedrijven en culturele organisaties hun verhaal professioneel vast te leggen."
@@ -46,8 +47,9 @@ function Homepage(props) {
                 />
             </section>
             <Info
-                classNameDiv="text-center font-montserrat pt-8"
+                classNameDiv="text-center font-sans py-8 px-8 mx-auto"
                 classNameTitle="text-5xl font-bold pb-8"
+                classNamePar="text-gray-500 text-xl"
                 titleText="Voor wie werken wij"
                 subTextOne="Wij werken voor makers, bedrijven en culturele organisaties die hun verhaal professioneel willen vertellen."
             />
