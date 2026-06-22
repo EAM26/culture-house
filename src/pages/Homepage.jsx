@@ -3,6 +3,7 @@ import Hero from "../components/Hero.jsx";
 import Info from "../components/Info.jsx";
 import CardSection from "../components/CardSection.jsx";
 import Card from "../components/Card.jsx";
+
 function Homepage(props) {
     return (
         <main className="font-montserrat">
@@ -20,36 +21,35 @@ function Homepage(props) {
                 className="flex flex-col gap-6 px-3 pt-7 font-montserrat font-semibold"
             >
                 <Card
-                    classNameDiv="flex-1 bg-gray-300 rounded-md flex-col items-center text-center px-2 py-5"
+                    classNameDiv="flex-1 bg-gray-200 rounded-2xl flex-col items-center text-center px-2 py-5"
                     classNameTitle="text-4xl font-bold text-blue-900"
                     titleText="Podcast"
                     subText="Voor podcasters, muzikanten, presentatoren en creatieve professionals."
                 />
                 <Card
-                    classNameDiv="flex-1 bg-gray-300 rounded-md flex-col items-center text-center px-2 py-5"
+                    classNameDiv="flex-1 bg-gray-200 rounded-2xl flex-col items-center text-center px-2 py-5"
                     classNameTitle="text-4xl font-bold text-blue-900"
                     titleText="Video"
                     subText="Videoproducties, interviews en registraties voor makers, bedrijven en culturele organisaties."
                 />
                 <Card
-                    classNameDiv="flex-1 bg-gray-300 rounded-md flex-col items-center text-center px-2 py-5"
+                    classNameDiv="flex-1 bg-gray-200 rounded-2xl flex-col items-center text-center px-2 py-5"
                     classNameTitle="text-4xl font-bold text-blue-900"
                     titleText="Muziek"
                     subText="Audio- en video-opnames voor artiesten, ensembles en culturele producties."
                 />
                 <Card
-                    classNameDiv="flex-1 bg-gray-300 rounded-md flex-col items-center text-center px-2 py-5"
+                    classNameDiv="flex-1 bg-gray-200 rounded-2xl flex-col items-center text-center px-2 py-5"
                     classNameTitle="text-4xl font-bold text-blue-900"
                     titleText="Livestreams"
                     subText="Van webinars en concerten tot hybride evenementen. Wij brengen jouw publiek samen, waar het ook is."
                 />
             </section>
-            {/*<CardSection/>*/}
             <Info
                 classNameDiv="text-center font-montserrat pt-8"
                 classNameTitle="text-5xl font-bold pb-8"
-             titleText="Voor wie werken wij"
-             subTextOne="Wij werken voor makers, bedrijven en culturele organisaties die hun verhaal professioneel willen vertellen."
+                titleText="Voor wie werken wij"
+                subTextOne="Wij werken voor makers, bedrijven en culturele organisaties die hun verhaal professioneel willen vertellen."
             />
             <section
                 className="flex flex-col gap-6 px-3 pt-7 font-montserrat font-semibold"

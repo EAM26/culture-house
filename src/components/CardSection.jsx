@@ -7,7 +7,7 @@ function CardSection(props) {
         className="px-3 flex items-stretch gap-6"
         >
             <Card
-                classNameDiv="flex-1 bg-gray-300 rounded-md flex-col items-center text-center px-2 py-5"
+                classNameDiv="flex-1 bg-gray-300 rounded flex-col items-center text-center px-2 py-5"
                 titleText="Podcast"
                 subText="Voor podcasters, muzikanten, presentatoren en creatieve professionals."
             />

@@ -10,7 +10,7 @@ function Card({ classNameDiv , classNameTitle,titleText, subText}) {
                 {titleText}
             </h3>
             <p
-                className="text-gray-500 py-3 ">
+                className="text-gray-400 py-3 ">
                 {subText}
             </p>
         </div>
