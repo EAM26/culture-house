@@ -1,3 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+
+@import "tailwindcss";
+
+@theme {
+    --font-glitch: "Rubik Glitch", system-ui, sans-serif;
+    --font-poppins: "Poppins", system-ui, sans-serif;
+    --font-montserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+
+* {
+    /*outline: 1px solid red;*/
+}
