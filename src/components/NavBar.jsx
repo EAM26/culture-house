@@ -14,14 +14,23 @@ function NavBar() {
                     Culture House
                 </Link>
 
-                <button
+                {!isOpen && <button
                     type="button"
                     className="scale-x-140 text-2xl md:hidden"
                     aria-label="Menu"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     ☰
-                </button>
+                </button>}
+
+                {isOpen && <button
+                    type="button"
+                    className="scale-x-140 text-2xl md:hidden"
+                    aria-label="Menu"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    X
+                </button>}
 
                 <ul className="hidden items-center gap-8 md:flex">
                     <li><Link to="/about">Over ons</Link></li>
